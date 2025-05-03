@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <div class="logo">Port<span>folio</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#services">My Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonial</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <p>Welcome to MyPortfolio.com</p>
+            <h1>Jashim M. Manan <span>Here</span></h1>
+            <p>I'm a passionate student and developer from Pontevedra Negros Occidental</p>
+            <div class="socials">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="FB_IMG.jpg" alt="My Profile Picture">
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+<section id="about"class="fade-in">
+    <h2>About Me</h2>
+    <p>Hello! I'm a dedicated student passionate about learning new skills and working on creative projects. Below are some basic details about me:</p>
+    <ul>
+        <li><strong>Age:</strong> 17</li>
+        <li><strong>Gender:</strong> Male</li>
+        <li><strong>Location:</strong> Negros Occidental, Philippines</li>
+        <li><strong>Hobbies:</strong> Drawing, Gaming, Exploring Tech</li>
+        <li><strong>Goal:</strong> To become a professional web developer or designer</li>
+    </ul>
+</section>
+
+<!-- EDUCATION -->
+<section id="education"class="fade-in">
+    <h2>Education</h2>
+    <p>I am currently a collage student majoring in Computer Science. My favorite subjects include:</p>
+    <ul>
+        <li>Computer Programming</li>
+        <li>Web Development (HTML, CSS, JS)</li>
+        <li>Multimedia Arts</li>
+    </ul>
+</section>
+
+<!-- MY SERVICES -->
+<section id="services"class="fade-in">
+    <h2>My Services</h2>
+    <p>Here are some services I can offer as a student and beginner developer:</p>
+    <ul>
+        <li><strong>Basic Website Creation:</strong> Simple personal or school websites using HTML and CSS</li>
+        <li><strong>Poster or Layout Design:</strong> Using Canva or basic photo editing tools</li>
+        <li><strong>Presentation Design:</strong> Beautiful PowerPoint or Google Slides presentations</li>
+    </ul>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio"class="fade-in">
+    <h2>Portfolio</h2>
+    <p>Here are some of the projects I’ve worked on:</p>
+    <ul>
+        <li><strong>School Website Project:</strong> A basic student portal using HTML and CSS</li>
+        <li><strong>Poster Design:</strong> Event posters for school activities</li>
+        <li><strong>Personal Blog Layout:</strong> A mockup design for a blog using Figma</li>
+    </ul>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials"class="fade-in">
+    <h2>Testimonials</h2>
+    <p>What people say about working with me:</p>
+    <blockquote>"Very creative and focused student — always delivers on time!" - ICT Teacher</blockquote>
+    <blockquote>"He helped me build my project website. Super helpful and easy to work with." - Classmate</blockquote>
+</section>
+
+
+<!-- Back to Top Button -->
+<a href="#home" class="back-to-top">↑ Top</a>
+<script>
+    // Show/hide back-to-top button when scrolling
+    const backToTopBtn = document.querySelector(".back-to-top");
+  
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    });
+
+    // Fade-in animation on scroll
+  const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+  threshold: 0.1
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add("visible");
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+  </script>
+  
+ 
+ 
+</body>
+</html>

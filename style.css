@@ -1,0 +1,177 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: rgb(248, 218, 47);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: black;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #f9a825;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #f9a825;
+    border-bottom: 2px solid #f9a825;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: white;
+}
+
+.hero-text span {
+    color: #f9a825;
+}
+
+.hero-img img {
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+}
+
+/* Social Icons */
+.socials {
+    margin-top: 15px;
+}
+
+.socials a img {
+    width: 30px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.socials a img:hover {
+    transform: scale(1.1);
+}
+
+/* Placeholder Sections */
+section {
+    padding: 100px 50px;
+    border-top: 1px solid #333;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #f9a825;
+}
+
+/* <!-- ABOUT ME -->*/
+section ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #111;
+    border-left: 5px solid #f9a825;
+    margin: 15px 0;
+    padding: 10px 15px;
+    color: #ccc;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f9a825;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #ffc107;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f9a825;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: background-color 0.3s;
+    z-index: 1000;
+    display: none; /* hidden by default */
+}
+
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
