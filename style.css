@@ -53,6 +53,11 @@ nav {
 .nav-links li a.active {
     color: rgb(6, 234, 250);
     border-bottom: 2px solid rgb(6, 234, 250);
+    text-shadow:
+      0 0 5px rgb(6, 234, 250),
+      0 0 10px rgb(6, 234, 250),
+      0 0 15px rgb(6, 234, 250);
+    transition: all 0.3s ease-in-out;
 }
 
 /* Hero Section */
@@ -175,3 +180,42 @@ blockquote {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+#typing-name {
+  color: rgb(6, 234, 250); 
+  font-weight: bold;
+}
+
+
+/* Profile Picture Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.profile-img {
+  width: 200px;
+  object-fit: cover;
+  border: 3px solid #00f7ff;
+  animation: float 3s ease-in-out infinite;
+  transition: 0.4s ease;
+  box-shadow: 
+    0 0 15px rgba(6, 234, 250, 0.5),
+    0 0 30px rgba(6, 234, 250, 0.4),
+    0 0 45px rgba(6, 234, 250, 0.3);
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 25px rgba(8, 235, 243, 1),
+    0 0 50px rgba(4, 237, 245, 0.8),
+    0 0 70px rgba(4, 237, 245, 0.6);
+}
+
+
