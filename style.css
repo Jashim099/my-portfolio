@@ -175,3 +175,32 @@ blockquote {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+.portfolio-card {
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  background-color: #1a1a1a;
+  transition: transform 0.3s ease;
+  margin: 20px auto;
+  color: white;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-card p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.05);
+}
