@@ -11,7 +11,7 @@ html {
 
 body {
     background-color: #000;
-    color: rgb(248, 218, 47);
+    color: rgb(6, 234, 250);
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -32,7 +32,7 @@ nav {
 }
 
 .logo span {
-    color: #f9a825;
+    color: rgb(6, 234, 250);
 }
 
 .nav-links {
@@ -51,8 +51,8 @@ nav {
 
 .nav-links li a:hover,
 .nav-links li a.active {
-    color: #f9a825;
-    border-bottom: 2px solid #f9a825;
+    color: rgb(6, 234, 250);
+    border-bottom: 2px solid rgb(6, 234, 250);
 }
 
 /* Hero Section */
@@ -73,7 +73,7 @@ nav {
 }
 
 .hero-text span {
-    color: #f9a825;
+    color: rgb(6, 234, 250);
 }
 
 .hero-img img {
@@ -105,7 +105,7 @@ section {
 
 section h2 {
     font-size: 36px;
-    color: #f9a825;
+    color: rgb(6, 234, 250);
 }
 
 /* <!-- ABOUT ME -->*/
@@ -122,7 +122,7 @@ section li {
 blockquote {
     font-style: italic;
     background-color: #111;
-    border-left: 5px solid #f9a825;
+    border-left: 5px solid rgb(6, 234, 250);
     margin: 15px 0;
     padding: 10px 15px;
     color: #ccc;
@@ -132,7 +132,7 @@ blockquote {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #f9a825;
+    background-color: rgb(6, 234, 250);
     color: black;
     padding: 10px 15px;
     border-radius: 50px;
@@ -144,14 +144,14 @@ blockquote {
 }
 
 .back-to-top:hover {
-    background-color: #ffc107;
+    background-color: rgb(6, 234, 250);
 }
 
 .back-to-top {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #f9a825;
+    background-color: rgb(6, 234, 250);
     color: black;
     padding: 10px 15px;
     border-radius: 50px;
