@@ -26,8 +26,15 @@ html {
 .about-image img {
   width: 200px;
   height: 200px;
+  object-fit: cover;
   border-radius: 200px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border: 3px solid #00f7ff;
+  animation: float 3s ease-in-out infinite;
+  transition: 0.4s ease;
+  box-shadow: 
+    0 0 15px rgba(6, 234, 250, 0.5),
+    0 0 30px rgba(6, 234, 250, 0.4),
+    0 0 45px rgba(6, 234, 250, 0.3);
 }
 
 .about-text {
