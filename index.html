@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jashim M. Manan | Student Portfolio</title>
+  <meta name="description" content="Welcome to the portfolio of Jashim M. Manan, a passionate student and aspiring web developer from Negros Occidental, Philippines.">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -25,34 +26,46 @@
             <h1>I’m <span id="typing-name"></span></h1>
             <p>I'm a passionate student and developer from Pontevedra Negros Occidental</p>
             <div class="socials">
-                <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="instagram.png" alt="instagram"></a>
+                  <a href="https://www.facebook.com/jas.manan.09" aria-label="Visit my Facebook profile">
+    <img src="facebook.png" alt="Facebook">
+  </a>
+                <a href="#" aria-label="Visit my Twitter profile"><img src="twitter.png" alt="Twitter icon"></a>
+                <a href="#" aria-label="Visit my Instagram profile"><img src="instagram.png" alt="Instagram icon"></a>
+
             </div>
         </div>
         <div class="hero-img">
-            <img src="Amyprofilepic.jpeg" alt="My Profile Picture" class="profile-img">
+            <img src="Amyprofilepic.jpeg" alt="Portrait of Jashim M. Manan, web development student" class="profile-img">
+
 
         </div>
     </section>
 
     <!-- ABOUT ME -->
-<section id="about"class="fade-in">
-    <h2>About Me</h2>
-    <p>Hello! I'm a dedicated student passionate about learning new skills and working on creative projects. Below are some basic details about me:</p>
-    <ul>
+<section id="about" class="fade-in">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <div class="about-image">
+      <img src="Amyprofilepic.jpeg" alt="About Me Image" />
+    </div>
+    <div class="about-text">
+      <p>Hello! I'm a dedicated student passionate about learning new skills and working on creative projects. Below are some basic details about me:</p>
+      <ul>
         <li><strong>Age:</strong> 21</li>
         <li><strong>Gender:</strong> Male</li>
         <li><strong>Location:</strong> Negros Occidental, Philippines</li>
         <li><strong>Hobbies:</strong> Basketball, Gaming, Exploring Tech</li>
         <li><strong>Goal:</strong> To become a professional web developer or designer</li>
-    </ul>
+      </ul>
+    </div>
+  </div>
 </section>
+
 
 <!-- EDUCATION -->
 <section id="education"class="fade-in">
     <h2>Education</h2>
-    <p>I am currently a collage student majoring in Computer Science. My favorite subjects include:</p>
+    <p>I am currently a college student majoring in Computer Science. My favorite subjects include:</p>
     <ul>
         <li>Computer Programming</li>
         <li>Web Development (HTML, CSS, JS)</li>
@@ -138,5 +151,10 @@ faders.forEach(fader => {
   window.onload = typeWriter;
 </script>
 
+<footer>
+    <p>© 2025 Jashim M. Manan. All rights reserved.</p>
+
+  </footer>
+  
 </body>
 </html>
